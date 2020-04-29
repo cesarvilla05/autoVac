@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>AutonomouseVacuume: Direction</title>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="/__/firebase/7.14.2/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script> -->
+
+    <!-- //old method -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    
+</head>
+<body>
+    <input type="checkbox" id="Frw"> Forward
+    <input type="checkbox" id="R"> Right <input type="checkbox" id="L"> Left
+    
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/init.js"></script> -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var config = {
+            apiKey: "AIzaSyC_YcWZDaTeo78F7cc7xI2F0tiW1IKUvtw",
+            authDomain: "autovactxstate.firebaseapp.com",
+            databaseURL: "https://autovactxstate.firebaseio.com",
+            projectId: "autovactxstate",
+            storageBucket: "autovactxstate.appspot.com",
+            messagingSenderId: "772569967854"
+            // appId: "1:772569967854:web:f98383186603071d7557ff",
+            // measurementId: "G-QC73TFJW8P"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true});
+        // Initialize Firebase
+        
+        
+    </script>    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
